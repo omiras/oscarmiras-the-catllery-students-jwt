@@ -22,7 +22,7 @@ export const SignUp = () => {
       if (response.ok) {
         console.log("User created");
         // Aquí puedes hacer algo con la respuesta exitosa, como redireccionar o mostrar un mensaje de éxito.
-        setMessage('¡Usuario creado con éxito!¡Ejercicio 2 resuelto! Los endpoints deben dar respuestas a las peticiones de nuestra aplicación cliente hecha con React, como en este caso, recibir un mail y password para dar de alta un usuario en la base de datos PostgreSQL.  Ya puedes hacer login (o puedes seguir creando usuarios).')
+        setMessage('¡Usuario creado con éxito (preseuntamente! Verifica si el usuario ha sido creado en el panel de administración de Flask)!¡Ejercicio 2 resuelto! Los endpoints deben dar respuestas a las peticiones de nuestra aplicación cliente hecha con React, como en este caso, recibir un mail y password para dar de alta un usuario en la base de datos PostgreSQL.  Ya puedes hacer login (o puedes seguir creando usuarios).')
       } else {
         console.error("Error creating user. Maybe you are using an existing email?");
         // Aquí puedes manejar el caso de error, como mostrar un mensaje de error o hacer algo más.
