@@ -16,6 +16,8 @@ export const Home = () => {
 	return (
 		<div className="text-center mt-5">
 			<h1>The CatGallery</h1>
+			<h2>rama main</h2>
+
 			<p>
 				<img style={{ width: 200 }} src={catImageUrl} />
 			</p>
