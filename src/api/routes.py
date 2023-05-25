@@ -106,6 +106,17 @@ def get_user_cats():
     cats_data = []
 
     # Ejercicio 5: COMPLETAR
-    # Busca todos los gatos asociados al usuario actual y añádelos a cats_data
 
+    cats = Cat.query.filter(Cat.user_id == curre_user_id).all()
+    for cat in cats:
+            cat_data = {
+                'id': cat.id,
+                'name': cat.name,
+                'image_url': cat.image_url,
+            }
+            cats_data.append(cat_data)
+    
+
+    # Busca todos los gatos asociados al usuario actual y añádelos a cats_data
+    print(cats_data)
     return jsonify(cats_data), 200
